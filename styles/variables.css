@@ -1,0 +1,20 @@
+:root {
+  --light-blue: #A6E3E9;
+  --pale-blue: #CBF1F5;
+  --orange: #FF8F1E;
+  --yellow: #E8A639;
+  --white: #FFFFFF;
+  --dark-1: #000000;
+  --dark-2: #2A2521;
+
+  --container-width: 75vw;
+  --header-height: 98.5vh;
+  --aside-booking-height: fit-content;
+  --aside-sushi-height: fit-content;
+  --main-height: fit-content;
+  --main-menu-height: fit-content;
+  --bg-dark-opacity: rgb(0,0,0,61%);
+  --bg-light-opacity: rgb(255,255,255,50%);
+  --article-height: fit-content;
+  --footer-height: fit-content;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us</title>
+</head>
+<body>
+  <main>
+    <form action="./index.html" method="post">
+      <div class="input-group">
+        <label for="name-field">Name:</label>
+        <input type="text" name="name" id="name-field" placeholder="Enter your name">
+      </div>
+      <div class="input-group">
+        <label for="address-field">Address:</label>
+        <input type="text" name="address" id="address-field" placeholder="Enter your address">
+      </div>
+      <div class="input-group">
+        <label for="sushi-set">Choose the set:</label>
+        <select name="sushi-set" id="sushi-set">
+          <option value="1">Maki</option>
+          <option value="2" selected>Nigiri</option>
+          <option value="3">Sashimi</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <input type="radio" name="cutlery" value="Cutlery"> Cutlery
+        <input type="radio" name="cutlery" value="No cutlery"> No cutlery
+      </div>
+      <div class="input-group">
+        <input type="submit" value="Order" name="order_btn">
+      </div>
+    </form>
+  </main>
+</body>
+</html>

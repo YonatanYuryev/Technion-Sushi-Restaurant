@@ -1,0 +1,605 @@
+@import url('./variables.css');
+
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron/static/Orbitron-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Adamina';
+  src: url('../fonts/Adamina/Adamina-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Acme';
+  src: url('../fonts/Acme/Acme-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
+body, html {
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  font-size: 14px;
+  color: var(--dark-1);
+  font-family: 'Lato', sans-serif;
+}
+
+/* HEADER */
+
+.header {
+  padding: 20px 0;
+  height: var(--header-height);
+  width: 100%;
+  background-image: url('../images/additional/first_section_bgc.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+
+.nav {
+  width: 100%;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7vw;
+}
+
+.nav__item:nth-child(1) {
+  flex: 1;
+}
+
+.nav__link {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.nav__link:hover, .nav__link:focus, .nav__link:active {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+.header__title-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__title-heading {
+  vertical-align: baseline;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.header__title-heading:nth-child(1) {
+  font-size: 12.5rem;
+  line-height: 12.5rem;
+  color: var(--white);
+  margin-right: 6.7vw;
+}
+
+.header__title-heading:nth-child(2) {
+  font-size: 8rem;
+  line-height: 8rem;
+  color: var(--yellow);
+  margin-left: 26.7vw;
+}
+
+.header__subheading {
+  color: var(--white);
+  font-family: 'Adamina';
+  font-size: 2.8rem;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.header__subheading-colorized {
+  color: var(--yellow);
+}
+
+/* ASIDE-SUSHI */
+
+.aside-sushi {
+  height: var(--aside-sushi-height);
+  background-color: var(--light-blue);
+  padding-top: 30px;
+}
+
+.aside-sushi__info {
+  background: var(--pale-blue);
+  padding: 130px 0;
+}
+
+.aside-sushi__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aside-sushi__item {
+  color: var(--dark-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  letter-spacing: 0;
+}
+
+.aside-sushi__item-image {
+  width: 23vw;
+}
+
+.aside-sushi__item-title {
+  font-family: 'Acme';
+  font-size: 4rem;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+
+.aside-sushi__item-description {
+  width: 80%;
+  font-family: 'Adamina';
+  font-size: 1.2rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.aside-sushi__welcome {
+  font-family: 'Adamina';
+  padding: 100px 0;
+}
+
+.aside-sushi__welcome-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.aside-sushi__welcome-title {
+  font-size: 3.5rem;
+  font-weight: normal;
+}
+
+.aside-sushi__welcome-text {
+  font-size: 1.6rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.aside-sushi__welcome-author {
+  font-size: 2.2rem;
+  font-weight: lighter;
+}
+
+/* MAIN */
+.main {
+  height: var(--main-height);
+  background: var(--pale-blue);
+}
+
+.main__menu {
+  height: var(--main-menu-height);
+  font-family: 'Adamina';
+  background-image: url('../images/additional/middle_section_bgc.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.main__menu-bg {
+  height: 100%;
+  padding: 40vh 0;
+  background: var(--bg-dark-opacity);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.main__heading {
+  color: var(--white);
+  font-size: 5.5rem;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+
+.main__subheading {
+  color: var(--orange);
+  font-size: 2.5rem;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+
+.main__products {
+  padding: 50px 0;
+}
+
+.main__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 6vw;
+  row-gap: 4vh;
+}
+
+.main__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__title {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Adamina';
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  font-weight: lighter;
+  background-color: var(--light-blue);
+  border-radius: 20px;
+}
+
+.main__img {
+  height: auto;
+  width: 100%;
+}
+
+/* ARTICLE */
+
+.article {
+  background:var(--light-blue);
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.article__text-wrapper {
+  font-family: 'Adamina';
+  letter-spacing: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.article__heading {
+  text-decoration: underline;
+  font-size: 3.5rem;
+}
+
+.article__subheading {
+  font-size: 4rem;
+}
+
+.article__description {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* TABLE */
+
+.article__table {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.article__table-td {
+  img {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+/* ASIDE-BOOKING */
+
+.aside-booking{
+  width: 100%;
+  background-image: url('../images/additional/last_section_bgc.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.aside-booking__bg {
+  background: var(--bg-light-opacity);
+  width: 100%;
+  height: var(--aside-booking-height);
+}
+
+.aside-booking__wrapper {
+  padding: 40vh 0;
+  font-family: 'Adamina';
+  letter-spacing: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+}
+
+.aside-booking__book, .aside-booking__reserve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside-booking__book {
+  gap: 30px;
+}
+
+.aside-booking__reserve {
+  gap: 10px;
+}
+
+.aside-booking__book-link, .aside-booking__reserve-link {
+  color: var(--dark-1);
+  text-decoration: underline;
+  font-size: 3.8rem;
+  font-weight: lighter;
+}
+
+.aside-booking__book-description {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.aside-booking__reserve-additional-text {
+  font-size: 1.2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  background: var(--light-blue);
+  height: var(--footer-height);
+  padding: 100px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 110px;
+}
+
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  gap: 10vw;
+}
+
+.footer__main-text-wrapper {
+  font-size: 'Adamina';
+  font-weight: lighter;
+  letter-spacing: 0;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 15vw;
+}
+
+.footer__main-columns-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__main-list {
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+.footer__main-column .footer__main-item:first-child {
+    font-weight: bolder;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.footer__main-link {
+  cursor: pointer;
+}
+
+.footer__secondary {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__social-media {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+
+.footer__social-media-list {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.footer__social-media-link {
+  cursor: pointer;
+}
+
+.footer__payment-list {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.footer__payment-link {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .main__menu-bg {
+    padding: 20vh 0;
+  }
+
+  .aside-booking__wrapper {
+    padding: 15vh 0; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .header__title-heading:nth-child(1) {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  
+  .header__title-heading:nth-child(2) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .header__subheading {
+    font-size: 1.4rem;
+  }
+  
+  .nav__menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav__logo {
+    width: calc(100% / 2 + 15px);
+    height: calc(100% / 2 + 15px);
+  }
+
+  .aside-sushi__list {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .aside-sushi__welcome-title {
+    font-size: 2rem;
+  }
+
+  .aside-sushi__welcome-text {
+    font-size: 1.2rem;
+  }
+
+  .aside-sushi__welcome-author {
+    font-size: 1.7rem;
+  }
+
+  .main__heading {
+    font-size: 2.5rem;
+  }
+
+  .main__subheading {
+    font-size: 1.5rem;
+  }
+
+  .main__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 6vw;
+    row-gap: 4vh;
+  }
+
+  .article__heading {
+    font-size: 2.5rem;
+  }
+  
+  .article__subheading {
+    font-size: 1.8rem;
+  }
+  
+  .article__description {
+    font-size: 1.3rem;
+  }
+
+  .article__table {
+    border-spacing: 5px;
+  }
+
+  .aside-booking__book-link, .aside-booking__reserve-link {
+    font-size: 2.5rem;
+  }
+  
+  .aside-booking__book-description {
+    font-size: 1.3rem;
+  }
+  
+  .aside-booking__reserve-additional-text {
+    font-size: 1.1rem;
+  }
+
+  .footer__main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__main-text-wrapper {
+    width: 100%;
+  }
+
+  .footer__main-columns-wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer__main-column .footer__main-item:first-child {
+      font-size: 1.4rem;
+  }
+
+  .footer__main-column {
+    width: 100%;
+  }
+
+  .footer__secondary {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
