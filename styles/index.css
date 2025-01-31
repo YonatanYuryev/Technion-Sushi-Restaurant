@@ -1,29 +1,5 @@
 @import url('./variables.css');
-
-@font-face {
-  font-family: 'Lato', sans-serif;
-  src: url('../fonts/Lato/Lato-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'Orbitron';
-  src: url('../fonts/Orbitron/static/Orbitron-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'Adamina';
-  src: url('../fonts/Adamina/Adamina-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'Acme';
-  src: url('../fonts/Acme/Acme-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/Poppins/Poppins-Regular.ttf');
-}
+@import url('./fonts.css');
 
 body, html {
   scroll-behavior: smooth;
@@ -75,6 +51,10 @@ body, html {
   flex: 1;
 }
 
+.nav__item:not(:first-child) {
+  cursor: pointer;
+}
+
 .nav__link {
   cursor: pointer;
   text-decoration: none;
@@ -83,7 +63,10 @@ body, html {
   font-size: 1.4rem;
 }
 
-.nav__link:hover, .nav__link:focus, .nav__link:active {
+.nav__link:hover,
+.nav__link:focus,
+.nav__link:active,
+.nav__link.active{
   text-decoration: none;
   color: var(--yellow);
 }

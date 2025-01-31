@@ -4,34 +4,214 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact us</title>
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/contactus.css">
+  <script>
+    nagishli_config = {
+      // צבע התוסף - האפשרויות הן Blue (כחול), Red (אדום), Green (ירוק), Purple (סגול), Pink (ורוד), Yellow (צהוב), Gray (אפור), Orange (כתום), Brown (חום), Turquoise (טורקיז) ו-Black (שחור)
+      color: "blue",
+      // שפת התוסף, he - עברית, en - אנגלית
+      language: "he"
+    };
+  </script>
+  <script src="../js/nagishli_beta.js" charset="utf-8" defer></script>
 </head>
 <body>
-  <main>
-    <form action="./index.html" method="post">
-      <div class="input-group">
-        <label for="name-field">Name:</label>
-        <input type="text" name="name" id="name-field" placeholder="Enter your name">
-      </div>
-      <div class="input-group">
-        <label for="address-field">Address:</label>
-        <input type="text" name="address" id="address-field" placeholder="Enter your address">
-      </div>
-      <div class="input-group">
-        <label for="sushi-set">Choose the set:</label>
-        <select name="sushi-set" id="sushi-set">
-          <option value="1">Maki</option>
-          <option value="2" selected>Nigiri</option>
-          <option value="3">Sashimi</option>
-        </select>
-      </div>
-      <div class="input-group">
-        <input type="radio" name="cutlery" value="Cutlery"> Cutlery
-        <input type="radio" name="cutlery" value="No cutlery"> No cutlery
-      </div>
-      <div class="input-group">
-        <input type="submit" value="Order" name="order_btn">
-      </div>
-    </form>
+  <header class="header">
+    <div class="header__inner container">
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">
+                <img class="nav__logo" src="../images/additional/logo.png" alt="Logo">
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./aboutus.html">About us</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link active" href="./contactus.html">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+ <div class="main__inner container">
+  <form class="main__form" action="./contactus.html" method="post">
+    <div class="input-group">
+      <label for="name-field">Name:</label>
+      <input class="input-classic" type="text" name="name" id="name-field" placeholder="Enter your name">
+    </div>
+    <div class="input-group">
+      <label for="email-field">Email:</label>
+      <input class="input-classic" type="email" name="email" id="email-field" placeholder="Enter your email">
+    </div>
+    <div class="input-group">
+      <label for="number-field">Number:</label>
+      <input class="input-classic" type="tel" name="number" id="number-field" placeholder="Enter your number">
+    </div>
+    <div class="input-group">
+      <label for="country">Country of residence:</label>
+      <select class="input-select" name="country" id="country">
+        <option class="option" value="1" selected>Israel</option>
+        <option class="option" value="2">USA</option>
+        <option class="option" value="3">Japan</option>
+        <option class="option" value="4">Brazil</option>
+      </select>
+    </div>
+    <div class="input-group input-radio-wrapper">
+      <input class="input-radio" type="radio" name="gender" value="Male"> Male
+      <input class="input-radio" type="radio" name="gender" value="Female"> Female
+    </div>
+    <div class="input-group">
+      <input class="contact-us__btn" type="submit" value="Contact us">
+    </div>
+  </form>
+  <div class="main__contacts">
+    <div class="main__contact-group">
+      <span class="main__contact-label">Email:</span>
+      <span class="main__contact-value">yy@gmail.com</span>
+    </div>
+    <div class="main__contact-group">
+      <span class="main__contact-label">Phone:</span>
+      <span class="main__contact-value">051-234-567</span>
+    </div>
+  </div>
+ </div>
   </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <section class="footer__main">
+        <div class="footer__main-text-wrapper">
+          <span class="footer__main-title">Sushi House</span>
+          <p class="footer__main-text">Food for the body is not enough. There must be foos for the soul.</p>
+        </div>
+        <ul class="footer__main-columns-wrapper">
+          <li class="footer__main-column">
+            <ul class="footer__main-list">
+              <li class="footer__main-item">
+                <a class="footer__main-link">Main Menu</a>
+              </li>
+              <li class="footer__main-item">
+                <a class="footer__main-link">About</a>
+              </li>
+              <li class="footer__main-item">
+                <a class="footer__main-link">Menus</a>
+              </li>
+              <li class="footer__main-item">
+                <a class="footer__main-link">Offers</a>
+              </li>
+              <li class="footer__main-item">
+                <a class="footer__main-link">Events</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__main-column">
+            <ul class="footer__main-list">
+              <li class="footer__main-item">
+                <a class="footer__main-link">Information</a>
+              </li>
+              <li class="footer__main-item">
+                <a class="footer__main-link">Contact</a>
+              </li>
+              <li class="footer__main-item">
+                <a class="footer__main-link">Orders & Returns</a>
+              </li>
+              <li class="footer__main-item">
+                <a class="footer__main-link">Videos</a>
+              </li>
+              <li class="footer__main-item">
+                <a class="footer__main-link">Reservation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__main-column">
+            <ul class="footer__main-list">
+              <li class="footer__main-item">
+                <a class="footer__main-link">Address</a>
+              </li>
+              <li class="footer__main-item">
+                <a class="footer__main-link">Hyderabad</a>
+              </li>
+              <li class="footer__main-item">
+                <a class="footer__main-link">Telangana, India</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__secondary">
+        <div class="footer__social-media">
+          <span class="footer__social-media-label">Connect with us</span>
+          <ul class="footer__social-media-list">
+            <li class="footer__social-media-item">
+              <a class="footer__social-media-link">
+                <img class="footer__social-media-image" draggable="false" src="../images/footer/fb.png" alt="Fb">
+              </a>
+            </li>
+            <li class="footer__social-media-item">
+              <a class="footer__social-media-link">
+                <img class="footer__social-media-image" draggable="false" src="../images/footer/inst.png" alt="Inst">
+              </a>
+            </li>
+            <li class="footer__social-media-item">
+              <a class="footer__social-media-link">
+                <img class="footer__social-media-image" draggable="false" src="../images/footer/linkdein.png" alt="LI">
+              </a>
+            </li>
+            <li class="footer__social-media-item">
+              <a class="footer__social-media-link">
+                <img class="footer__social-media-image" draggable="false" src="../images/footer/twitter.png" alt="Tw">
+              </a>
+            </li>
+            <li class="footer__social-media-item">
+              <a class="footer__social-media-link">
+                <img class="footer__social-media-image" draggable="false" src="../images/footer/yb.png" alt="Yb">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__payment">
+          <ul class="footer__payment-list">
+            <li class="footer__payment-item">
+              <a class="footer__payment-link">
+                <img draggable="false" class="footer__payment-image" src="../images/footer/visa.png" alt="Visa">
+              </a>
+            </li>
+            <li class="footer__payment-item">
+              <a class="footer__payment-link">
+                <img draggable="false" class="footer__payment-image" src="../images/footer/mc.png" alt="Mc">
+              </a>
+            </li>
+            <li class="footer__payment-item">
+              <a class="footer__payment-link">
+                <img draggable="false" class="footer__payment-image" src="../images/footer/ae.png" alt="Ae">
+              </a>
+            </li>
+            <li class="footer__payment-item">
+              <a class="footer__payment-link">
+                <img draggable="false" class="footer__payment-image" src="../images/footer/pp.png" alt="Pp">
+              </a>
+            </li>
+            <li class="footer__payment-item">
+              <a class="footer__payment-link">
+                <img draggable="false" class="footer__payment-image" src="../images/footer/ap.png" alt="Ap">
+              </a>
+            </li>
+            <li class="footer__payment-item">
+              <a class="footer__payment-link">
+                <img draggable="false" class="footer__payment-image" src="../images/footer/gp.png" alt="Gp">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </footer>
 </body>
 </html>
