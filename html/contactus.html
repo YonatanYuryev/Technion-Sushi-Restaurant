@@ -15,6 +15,10 @@
     };
   </script>
   <script src="../js/nagishli_beta.js" charset="utf-8" defer></script>
+  <script async defer 
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAPLeAuFay2ffoTJl2fKkzuEYEeZ21ae0">
+</script>
+<script src="../js/google-maps/index.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -71,7 +75,10 @@
       <input class="contact-us__btn" type="submit" value="Contact us">
     </div>
   </form>
-  <div class="main__contacts">
+  <section class="main__maps-wrapper">
+    <div id="main__map"></div>
+  </section>
+  <section class="main__contacts">
     <div class="main__contact-group">
       <span class="main__contact-label">Email:</span>
       <span class="main__contact-value">yy@gmail.com</span>
@@ -80,7 +87,7 @@
       <span class="main__contact-label">Phone:</span>
       <span class="main__contact-value">051-234-567</span>
     </div>
-  </div>
+  </section>
  </div>
   </main>
 

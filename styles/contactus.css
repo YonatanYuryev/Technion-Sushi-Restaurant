@@ -139,6 +139,11 @@ input:active,
   justify-content: flex-start;
 }
 
+#main__map {
+  width: 300px;
+  height: 300px;
+}
+
 .contact-us__btn {
   display: flex;
   align-items: center;
