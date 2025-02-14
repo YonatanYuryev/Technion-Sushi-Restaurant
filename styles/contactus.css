@@ -83,7 +83,8 @@ body, html {
 }
 
 .main__form {
-  width: fit-content;
+  width: 350px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -140,8 +141,8 @@ input:active,
 }
 
 #main__map {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 400px;
 }
 
 .contact-us__btn {
@@ -270,6 +271,15 @@ input:active,
 }
 
 /* MEDIA */
+
+@media screen and (max-width: 1028px) {
+  .main__inner {
+    flex-wrap: wrap;
+  }
+  .main__form, #main__map {
+   width: 300px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .nav__menu {
