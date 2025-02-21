@@ -9,6 +9,7 @@ body, html {
   font-family: 'Lato', sans-serif;
 }
 
+/* HEADER */
 .header {
   padding: 20px 0;
   height: fit-content;
@@ -286,6 +287,12 @@ input:active,
 
 .footer__payment-link {
   cursor: pointer;
+}
+
+.accessibility-statement__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
 }
 
 /* MEDIA */
